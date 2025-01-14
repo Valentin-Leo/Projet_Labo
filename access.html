@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi des Accès</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Suivi des Accès</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Page d'accueil</a></li>
+                <li><a href="access_log.html">Suivi des accès</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter">
+            <h2>Filtrer les accès</h2>
+            <form>
+                <label for="user">Utilisateur :</label>
+                <input type="text" id="user" name="user" placeholder="Nom ou Prénom">
+
+                <label for="date-range">Plage de dates :</label>
+                <input type="date" id="start-date" name="start-date">
+                <input type="date" id="end-date" name="end-date">
+
+                <button type="submit">Filtrer</button>
+            </form>
+        </section>
+
+        <section class="access-log">
+            <h2>Liste des accès</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Utilisateur</th>
+                        <th>Accès au laboratoire</th>
+                        <th>Accès à l'armoire</th>
+                        <th>Date</th>
+                        <th>Heure</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Étudiant 1</td>
+                        <td>Oui</td>
+                        <td>Non</td>
+                        <td>2024-01-10</td>
+                        <td>10:30</td>
+                    </tr>
+                    <tr>
+                        <td>Étudiant 2</td>
+                        <td>Oui</td>
+                        <td>Oui</td>
+                        <td>2024-01-11</td>
+                        <td>14:45</td>
+                    </tr>
+                    <!-- Ajoutez ici des entrées dynamiques en fonction des accès -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Lycée F. Mauriac-Forez</p>
+    </footer>
+</body>
+</html>
